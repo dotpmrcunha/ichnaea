@@ -121,4 +121,4 @@ class TestMigration(object):
 
         # compare the db schema from a fresh database to
         # one created from the model definitions
-        assert compare_schema(db.engine, fresh_metadata) == []
+        assert compare_schema(db.engine, model_metadata) == []
